@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-dark nav1">
+    <div class="container-fluid ">
+      <img class="logo" src="https://cdn.cdnlogo.com/logos/e/78/envato-market-api.svg" alt="">
+      <form class="d-flex">
+        <button class="btn btn-outline-success buy-now" type="submit">Buy now</button>
+      </form>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-light nav2 space-around">
+    <div class="container-fluid">
+      <img class="ms-5 nav2-img"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAAAXCAYAAADZYae+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5NUM2M0FDMDkyMTVFNTExQTUzM0FGRkVCN0ZCQjNFRCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFRkEzMDEyMzE1RkUxMUVCOEJEN0VCNjZCMjhFMTFCNiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFRkEzMDEyMjE1RkUxMUVCOEJEN0VCNjZCMjhFMTFCNiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjdCQzRBNDYxQzEyM0U4MTFBOTEyOUM3QzREMDZBNzRFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk1QzYzQUMwOTIxNUU1MTFBNTMzQUZGRUI3RkJCM0VEIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+jVn/9gAABIhJREFUeNrsW4txozAQlZlrgJTgdGBcAi6BlIBLwCXYJUAJpgQowSrBlBBKuBN3q2SzWX1h4jhnzWjsGLGsVk9vPyKrzWYjLK1QPYOeo98l9F71Vnx9+03+Xt2J7G9pEynl388sy6b1TtEaD+raCNdy9b1PDDJK1a+qn1WvCFgEAKiE61f4/mj339aq1wCaaW2PAJZpfbvpOwWMHljDzSEPOSN0PtodNsUgJ/yJiKDWYxIClg7cUEwr4P4HaH4QhhS7dBB6fAJMDa6Gtkb1HfhE3beqn5ixGUbjo919e4Fw5EABUzLMMgU9z6rvMcLQtQNclwzTPGKa+21P8LlVrmmY/pb/ouInDJiKAcTEKoND+ADjKGgqSySPuwgcZ7pP/14Z4qsrGtMZ9AuVjROEM3mGThhCN44OLl+RrIuF/UNaSuRqW9A4ZrR9JsAIa4aKRk9FRhhPF6q48U4pUQaH55dD9H+ZGW9lIL9mbKjnr8HqWuwCycqJXjojvcxMLGpyL7duzpYwKXPjwSwc0zSMQW/Vco9YKoMFiAXjxTOTXMPY0sFQPrKKSKAXzAbeB5DCB8BQRftII/ZfAJjeoJ/+fSTpIN5NPeM6c7RhfGWbAvuBGUt3eM4sJCdLWmStOVficEX0GVPCElVwXW02myUrmy5Zvs+aK4de3yKwnMluO5CMzyX7SjbZCDIahjmOhA0GSBT0QlKW0slETxa8YmIoX73pfCXYA8ct3gv86z+J/EcSn82JiyhYuKBfu3ZJalNrkNEwsnQCMTK6HxjW9mFw6opGcEXRLfmhAGkZVtDZ0RxXmTPUbtuekqlX5RZZtpjiAIDS3QV8kyuScwHTM6hcwpj9DQFzMuins6PY8y8uQQgFb25giKUPcWlW1BrsEgyYwWGUWGMONwSMJHGLMNRnQjOO1OLqbBkkJyNGVmhmtDggOYYphf/BIzZC+Y0YBoPmBZhgNKTWx8hYSASk1ZyM0QHGpd1yHbGuLGBaZheEFog6JhtoI4wplpgUY7gp0HsC8MxxwTH3ckcuQvBHKks2WmdJxQJvFCQooKI7r/MIEHVqmHnEEJzBcw/XFuMaK9RzAp7djJ1N9XcF0RmTDrcGBjg6dDnCmujuKjpyldxQRjUCpmUmkIn3c4zC8GCu7N1bgkHJuL90yQkBQx1Rp8HfnFiLVsH1KyGlIQXnmLexyLow+ulsR4Nfd+kJ8BOjVxVr3BV6RTP1ZBVX3LCzBHC5+FylHJDhTOwSUrjTh2x0t0nDM0ILd9wc6DzWBte6IyzlIytjmOdT8c2hN+cF3nQJKdytyDu9KezKmJSzF36Hll2E2wmt9FaeTDXp+kx09qlGlyL8vZ+9gXlDZY0AliHAJhnDdm9yQgCTMMrsYeGHgAkcHMyC24tHsWtWcQkYw1UjGQJ05lzT1tNGmg0ai6ydp6weAB5asuAKiFFB8Grmfw1IiH1Cja7T8AJRpUTFJRrbnAIZButfiI+vDPQozuL0Dj1bK0F+htzQIN4PEJsAu5QoRkmRLP3fGbZShY/eZyYebRTDeB8X/BFgAGKekrDc/Q/hAAAAAElFTkSuQmCC"
+        alt="">
+      <div class="collapse navbar-collapse nav2-img" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+          <li class="nav-item">
+            <a class="nav-link active black" aria-current="page" href="#">Home <i
+                class="black las la-angle-down"></i></a>
+
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link black" href="#">Shop <i class="black las la-angle-down"></i></a>
+
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link black" href="#">Blog <i class="black las la-angle-down"></i></a>
+
+            <!-- <div>
+                    <ul class="hvr">
+                   <li>Blog</li>
+                   <li>Blog Lift Sidebar</li>
+                   <li>Blog No Sidebar</li>
+                   <li>Blog 2 Column</li>
+                   <li>Blog 2 Column</li>
+                   <li>Masonary</li>
+                   <li>Blog 3 Column</li>
+                   <li>Blog Details</li> 
+                </ul>
+                </div> -->
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link black" href="#">Pages <i class="las la-angle-down black"></i></a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link black" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="mar-right d-flex">
+          <div class="my-2 me-5 ">
+            <i class="me-1 las la-search"></i><span>Search</span>
+          </div>
+          <div class="me-5">
+            <i class="me-1 las la-shopping-bag"></i><span>Cart(0)</span>
+          </div>
+          <i class="las la-bars bars me-5"></i>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <div class="first-page d-flex">
+    <div class="handmade col-sm-8">
+      <b>Handmade</b><br>
+      <b>Hand carved Coffee</b>
+      <p class="p">As rich and unique as the coffee beans it is intended for, this little scoop will</p>
+      <p class="p">make your morning ritual a special occasion every day.</p>
+      <button class="discover">DISCOVER NOW</button>
+    </div>
+    <div class="d-flex buttns">
+      <button class="button ms-3"></button>
+      <button class="button ms-3"></button>
+      <button class="button ms-3"></button>
+    </div>
+    <div class="containerr col-sm-8 btnn d-flex ">
+      <div class=" mt-15 ms-3">
+        <img class="imgs" src="https://outstock-vue.vercel.app/_nuxt/banner-sm-1.39ffa9b9.jpg" alt="">
+      </div>
+      <div class=" mt-15 ms-3">
+        <img src="https://outstock-vue.vercel.app/_nuxt/banner-sm-2.771cae9f.jpg" alt="">
+      </div>
+      <div class=" mt-15 ms-3">
+        <img src="https://outstock-vue.vercel.app/_nuxt/banner-sm-3.3ac76e33.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="white"></div>
+
+  <div><p class="lorem">Mirum est notare quam littera gothica quam nunc putamus parum claram!</p></div>
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+
+
+  <a href="students.html">go to list</a>
+  <div class="container p-5">
+      <div class="mb-3">
+          <label for="FullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="FullName">
+      </div>
+      <div class="mb-3">
+          <label for="Image" class="form-label">Image</label>
+          <input type="text" class="form-control" id="Image">
+      </div>
+      <div class="mb-3">
+          <label for="Price" class="form-label">Price</label>
+          <input type="number" class="form-control" id="Price">
+      </div>
+      <button class="btn btn-success">Create</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+        
+        const btn = document.querySelector('.btn');
+btn.addEventListener('click', function(){
+    fetch('https://646a084c03bb12ac209836a9.mockapi.io/cards', {
+        method : 'POST',
+        headers : {
+            'Content-Type' : 'application/json'
+        },
+        body : JSON.stringify({
+            FullName : document.querySelector('#FullName').value,
+            Image: document.querySelector('#Image').value,
+            Price: document.querySelector('#Price').value
+        })
+    }).then(res=>{
+        if (res.ok) {
+            successAlert('Müvəffəqiyyətlə əlavə olundu!')
+            document.querySelector('#FullName').value = '';
+            document.querySelector('#Image').value = '';
+            document.querySelector('#Price').value = '';
+        }
+        else{
+            errorAlert('Bir xəta baş verdi!')
+        }
+    })
+    .catch(()=>errorAlert('Bir xəta baş verdi!'))
+})
+</script>
+</body>
+</html>
